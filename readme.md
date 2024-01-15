@@ -73,6 +73,8 @@ and make a function to calculateTotalAmount.
 
 /explain
 
-@workspace new
+@workspace /new Create a html website with an index file and and a contact page. The layout should be a header with the title "Copilot" and the background should be dark blue. The title should be big and white. The content should never be wider than 800px and also be responsive to fit all devices. The footer should have a light green background and say "Copilot is awesome!"
+
+
 
 
