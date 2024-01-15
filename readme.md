@@ -55,10 +55,21 @@ create a component that uses a useEffect to fetch data from https://example.com/
 ## Chat
 I've heard people say online that fetching data inside a useEffect is a bad practice and that libraries like React Query should be used. Please explain why and show me how I can use React Query instead.
 
-## Copilot
+## Copilot in badexemple.ts
 Naming things, regex, functions
 
-/doc
+email regex
+social security regex
+function doStuff()
+
+Try again by:
+
+import { Transaction } from './transactions';
+
+and make a function to calculateTotalAmount.
+
+
+/tests
 
 /explain
 
