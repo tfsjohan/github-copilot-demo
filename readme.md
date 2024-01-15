@@ -32,6 +32,21 @@ I want to setup EF Core for the User class and the Users table. What do I need t
 
 I already have a SQL Server table called Users that I want to use for this entity. How ever, in my table the LastLogin field is called last_login. How can I use the existing table and make sure the property and db column match even though the name is not exactly right?
 
+## Chat QrController
+
+### Alt 1
+Please update the selected code to use the QRCoder nuget package instead. 
+
+dotcore does not support Bitmap. Get a byte[] and return that directly using a File result instead.
+
+### Alt 2
+Please refactor this code to avoid using googleapis. Instead, find a Nuget package that can create a Png QR code and return that as a FileResult. Cache the output for 5 minutes.
+
+Use OutputCache instead of a memory cache
+
+Size should be the total width of the finished QR code. The argument to GetGraphics is the size of each block. Calculate how big each block needs to be in order to make the output size x size px.
+
+
 # React
 
 ## Cmd+I in ListReviews.tsx
@@ -46,4 +61,7 @@ Naming things, regex, functions
 /doc
 
 /explain
+
+@workspace new
+
 
